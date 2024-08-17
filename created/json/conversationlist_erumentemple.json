@@ -268,5 +268,167 @@
                 "value":0
             }
         ]
+    },
+    {
+        "id":"plateaucactus_1",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"plateaucactus_2a",
+                "requires":[
+                    {
+                        "requireType":"random",
+                        "requireID":"1/7"
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"plateaucactus_2b",
+                "requires":[
+                    {
+                        "requireType":"random",
+                        "requireID":"3/7"
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"plateaucactus_2c"
+            }
+        ]
+    },
+    {
+        "id":"plateaucactus_2a",
+        "message":"You bump into the cactus and get skewered! It looks like those needles have some kind of poison.",
+        "replies":[
+            {
+                "text":"Ouch!",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Oh c'mon.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"hasActorCondition",
+                        "requireID":"slime"
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"actorCondition",
+                "rewardID":"poison_blood",
+                "value":3
+            },
+            {
+                "rewardType":"actorCondition",
+                "rewardID":"slime",
+                "value":1
+            }
+        ]
+    },
+    {
+        "id":"plateaucactus_2b",
+        "message":"A healthy cactus, probably full of poisonous water."
+    },
+    {
+        "id":"plateaucactus_2c",
+        "rewards":[
+            {
+                "rewardType":"actorCondition",
+                "rewardID":"bleeding_wound",
+                "value":3
+            }
+        ]
+    },
+    {
+        "id":"plateau1campfire_s",
+        "replies":[
+            {
+                "nextPhraseID":"plateau1campfire_1b",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"omi3_plateau",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"plateau1campfire_1a"
+            }
+        ]
+    },
+    {
+        "id":"plateau1campfire_1a",
+        "message":"A small campfire. Judging by its looks, it must have been used recently. Someone else must have climbed up here few days ago.",
+        "replies":[
+            {
+                "text":"Look into it.",
+                "nextPhraseID":"plateau1campfire_2"
+            },
+            {
+                "text":"Leave.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"omi3_plateau",
+                "value":1
+            }
+        ]
+    },
+    {
+        "id":"plateau1campfire_2",
+        "message":"There is food remains buried among the ashes. Apart from that, nothing draws your attention.",
+        "replies":[
+            {
+                "text":"Leave.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Sigh, I somewhat expected a bag of gold.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"plateau1campfire_1b",
+        "message":"You have already checked this campfire."
+    },
+    {
+        "id":"plat1weeds",
+        "message":"A bunch of weeds and dry shrubs.",
+        "replies":[
+            {
+                "text":"Cut them down!",
+                "nextPhraseID":"plat1weeds_2",
+                "requires":[
+                    {
+                        "requireType":"wear",
+                        "requireID":"scythe",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"I need a proper tool for clearing this.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"plat1weeds_2",
+        "message":"You swing the scythe a few times and get rid of the bushes easily.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"omi3_plateau",
+                "value":3
+            }
+        ]
     }
 ]
