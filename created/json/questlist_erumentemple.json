@@ -43,6 +43,20 @@
                 "progress":3,
                 "logText":"You are strong enough to cut down some weeds. (Ah, and you have a Scythe)",
                 "rewardExperience":500
+            },
+            {
+                "progress":4,
+                "logText":"Quartz in Plateau1",
+                "rewardExperience":500
+            },
+            {
+                "progress":5,
+                "logText":"Dug holes in Plateau8",
+                "rewardExperience":750
+            },
+            {
+                "progress":6,
+                "logText":"Plateau3 or another: First encounter with the wet mud."
             }
         ]
     }
